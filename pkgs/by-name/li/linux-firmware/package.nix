@@ -22,13 +22,13 @@ let
 in
 stdenvNoCC.mkDerivation rec {
   pname = "linux-firmware";
-  version = "20250808";
+  version = "unstable-main";
 
   src = fetchFromGitLab {
     owner = "kernel-firmware";
     repo = "linux-firmware";
-    tag = version;
-    hash = "sha256-bmvhAKAY43WaPr3VLUUYoX6BU2Ret47vDnyCVP7157s=";
+    rev = "main";
+    hash = "sha256-OB+wRlGQqtyDGzvS1d4W4Dfel/SgU3XM18r0299rZ20=";
   };
 
   postUnpack = ''
